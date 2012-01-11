@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+	<title>Simple vCard Personal</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta name="description" content="" /> 
+	<meta name="keywords" content="" /> 
+	<link media="screen" href="css/style.css" type="text/css" rel="stylesheet" /> 
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.twitter.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head> 
+<body>  
+	<div id="wrapper">
+		<ul id="menu">
+			<li class="active" id="link_home"><a href="javascript:;" onclick="doShow('home')"><img src="images/home.png"> Inicio</a></li>
+			<li id="link_about"><a href="javascript:;" onclick="doShow('about')"><img src="images/about.png">Acerca de mí</a></li>
+			<li id="link_portfolio"><a href="javascript:;" onclick="doShow('portfolio')"><img src="images/portfolio.png"> Portfolio</a></li>
+			<li><a href="http://developer-luis-hernandez.com/"><img src="images/blog.png"> Blog</a></li>
+			<li id="link_contact"><a href="javascript:;" onclick="doShow('contact')"><img src="images/contact.png"> Contacto</a></li>
+		</ul>
+		<div class="cb"></div><br />
+		<div id="tab_home" class="page">
+			<h2>Hi there! Welcome on my personal page.</h2>
+			<p>
+				Vel, nisi pid dolor risus massa ridiculus! Diam a ut <b>mid tempor</b>, nec porta. Aliquam tincidunt dignissim lacus duis rhoncus eros augue eros pellentesque? Dignissim lectus tincidunt pulvinar, et egestas, <a href="#">amet pulvinar</a> tristique magnis. Tincidunt facilisis?
+			</p>
+		</div>
+		<div id="tab_about" class="page hidden">
+			<h2>About me</h2>
+			<img src="images/mlabs.info.png" class="thumb left" height="100">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br /><br />It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div id="tab_portfolio" class="page hidden">
+			<h2>Portfolio</h2>
+			
+			<div class="item">
+				<img src="images/portfolio/1.jpg" width="80" class="left">
+				<a href="#" rel="nofollow" class="title">Nunc elementum turpis</a>
+				<p>Dictumst nisi mid pid aliquet pid tristique tempor tortor ultricies, duis integer? Platea risus quis, a dictumst elementum parturient mus. Vel, dapibus mauris eu.</p>
+				<div class="cl"></div>
+			</div>
+			<div class="item">
+				<img src="images/portfolio/2.jpg" width="80" class="left">
+				<a href="#" rel="nofollow" class="title">Lorem ipsum dolor</a>
+				<p>Dictumst nisi mid pid aliquet pid tristique tempor tortor ultricies, duis integer? Platea risus quis, a dictumst elementum parturient mus. Vel, dapibus mauris eu.</p>
+				<div class="cl"></div>
+			</div>
+			<div class="cb"></div>
+		</div>
+		<div id="tab_contact" class="page hidden">
+			<h2>Contact me</h2>
+			<div id="response"></div>
+			<table>
+				<tr>
+					<td width="80">Name:</td>
+					<td><input type="text" id="contact_name" class="input"></td>
+				</tr>
+				<tr>
+					<td>E-mail:</td>
+					<td><input type="text" id="contact_email" class="input"></td>
+				</tr>
+				<tr>
+					<td>Message:</td>
+					<td><textarea id="contact_message" class="textarea"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="Send Message" onclick="sendMessage();" class="submit"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body> 
+</html> 
